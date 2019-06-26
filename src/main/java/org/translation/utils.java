@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import java.io.*;
 import java.util.*;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class utils {
@@ -52,6 +53,26 @@ public class utils {
         });
 
         return stringSet;
+    }
+
+    /**
+     * get the Strings tuples from the translation workbook
+     * @param wb translation workbook
+     * @return stringTuples : Hashmap containing the tuples
+     */
+    static HashMap<String,String> getStringTuples(XSSFWorkbook wb){
+        XSSFSheet sheet = wb.getSheetAt(0);
+        HashMap<String,String> stringTuples = new HashMap<>();
+        sheet.forEach(row -> {
+                Cell originalCell = row.getCell(0);
+                Cell translationCell = row.getCell(1);
+                    String val;
+                    if(isCellValueString(originalCell) && isCellValueString(translationCell)){
+                         stringTuples.put(originalCell.getStringCellValue(),translationCell.getStringCellValue());
+                    }
+
+            });
+        return stringTuples;
     }
 
     /**
@@ -112,7 +133,6 @@ public class utils {
         String[] columns = {"originalText", "translation"};
         if (strings.size() > 0) {
             XSSFWorkbook workbook = new XSSFWorkbook();
-            CreationHelper createHelper = workbook.getCreationHelper();
             Sheet sheet = workbook.createSheet("Translation");
             Font headerFont = workbook.createFont();
             headerFont.setBold(true);
@@ -163,6 +183,18 @@ public class utils {
       // Closing the workbook
       workbook.close();
   }
+
+    static XSSFWorkbook changeColmnsAlignments(XSSFWorkbook wb){
+        wb.forEach(sheet -> {
+                if(sheet.isRightToLeft())
+                 sheet.setRightToLeft(false);
+                else
+                    sheet.setSelected(true);
+
+        });
+
+return wb;
+    }
 /*===========================JFX Functions =============================*/
     /**
      * Trigger Alerts
@@ -209,6 +241,7 @@ public class utils {
                 new FileChooser.ExtensionFilter("Txt", "*.txt")
         );*/
     }
+
 
     /**
      * Load open dialog window

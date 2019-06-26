@@ -35,8 +35,6 @@ public class FXMLController implements Initializable {
     @FXML
     private TextField filePathTra;
     @FXML
-    private JFXButton startButton;
-    @FXML
     private JFXButton cancelBtn;
     @FXML
     private CheckBox shiftColmns;
@@ -99,9 +97,8 @@ public class FXMLController implements Initializable {
 
         if (this.exportradioBtn.isSelected()) {
             //Remove Selection from Shift columns
-            if (this.shiftColmns.isSelected()) {
-                this.shiftColmns.setSelected(false);
-            }
+
+            this.shiftColmns.setSelected(false);
             this.shiftColmns.setDisable(true);
 
             //Disable Translation Chooser
@@ -145,10 +142,11 @@ public class FXMLController implements Initializable {
         //Src file Path
         String excelWbPath = filepathSrc.getText();
         XSSFWorkbook wb = null;
+        Path path = Paths.get(excelWbPath);
+        String  outputPath=excelWbPath.substring(0, excelWbPath.indexOf(path.getFileName().toString()));
         if(exportradioBtn.isSelected()){
             try {
-                Path path = Paths.get(excelWbPath);
-                String  outputPath=excelWbPath.substring(0, excelWbPath.indexOf(path.getFileName().toString()));
+
                 wb =utils.loadExcelFile(excelWbPath);
                 utils.writeDataInExcelSheet(outputPath,utils.getStringsFromExcelSheets(wb));
             } catch (FileNotFoundException e){
@@ -165,24 +163,23 @@ public class FXMLController implements Initializable {
             try {
                 wb =utils.loadExcelFile(excelWbPath);
                 traWb =utils.loadExcelFile(traWbPath);
+                XSSFWorkbook res = utils.replaceStringsInExcelSheets(wb,utils.getStringTuples(traWb));
+                if(shiftColmns.isSelected()){
+                    res =utils.changeColmnsAlignments(res);
+                }
+                utils.writeExcelSheet(outputPath+"Translated.xlsx",res);
+                utils.triggerAlert("Info", "Done!");
             } catch (IOException e) {
                 utils.handleExceptions(e,"Error when loading one of the files");
                 e.printStackTrace();
             }
-            //TODO: get the translation in a key value store
-            //TODO: copy the excel sheet
-            //TODO: search the terms from the excel sheet in the csv and replace with translation
-            //TODO: check if columns needs to be shifted
-            if(shiftColmns.isSelected()){
-                //ToDO:shift columns
-            }
-            //TODO:save the file
+
 
 
 
 
         }
-        utils.triggerAlert("Info", "Done!");
+
     }
     }
 
