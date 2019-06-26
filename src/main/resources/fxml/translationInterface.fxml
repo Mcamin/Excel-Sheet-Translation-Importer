@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fillWidth="false" maxHeight="400.0" maxWidth="506.0" minHeight="299.0" minWidth="506.0" prefHeight="299.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xmlfilter.FXMLController">
+<VBox fillWidth="false" maxHeight="400.0" maxWidth="506.0" minHeight="299.0" minWidth="506.0" prefHeight="299.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.translation.FXMLController">
     <children>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="310.0" prefWidth="506.0">
                 <children>
@@ -27,7 +27,7 @@
                         </rowConstraints>
                         <children>
                             <JFXButton fx:id="startButton" onAction="#handleStartButton" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #afafaf;" text="Start" textFill="WHITE" />
-                            <JFXButton fx:id="cancelBtn" onAction="#handlecancelButton" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #afafaf;" text="Cancel" textFill="WHITE" GridPane.columnIndex="1" />
+                            <JFXButton fx:id="cancelBtn" onAction="#handleCancelButton" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #afafaf;" text="Cancel" textFill="WHITE" GridPane.columnIndex="1" />
                         </children>
                     </GridPane>
                     <Label layoutX="22.0" layoutY="67.0" prefHeight="20.0" prefWidth="120.0" text="Source File:">
@@ -45,7 +45,7 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         </rowConstraints>
                         <children>
-                            <JFXButton fx:id="chooseButtonSrc" onAction="#handlechooseButtonSrc" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #afafaf;" text="Choose" textFill="WHITE" GridPane.columnIndex="2" />
+                            <JFXButton fx:id="chooseButtonSrc" onAction="#handleChooseButtonSrc" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #afafaf;" text="Choose" textFill="WHITE" GridPane.columnIndex="2" />
                             <TextField fx:id="filepathSrc" prefHeight="26.0" prefWidth="325.0" GridPane.columnIndex="1" />
                         </children>
                     </GridPane>
@@ -64,7 +64,7 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         </rowConstraints>
                         <children>
-                            <JFXButton fx:id="chooseButtonTra" disable="true" onAction="#handlechooseButtonTra" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #afafaf;" text="Choose" textFill="WHITE" GridPane.columnIndex="2" />
+                            <JFXButton fx:id="chooseButtonTra" disable="true" onAction="#handleChooseButtonTra" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #afafaf;" text="Choose" textFill="WHITE" GridPane.columnIndex="2" />
                             <TextField fx:id="filePathTra" disable="true" prefHeight="26.0" prefWidth="325.0" GridPane.columnIndex="1" />
                         </children>
                     </GridPane>

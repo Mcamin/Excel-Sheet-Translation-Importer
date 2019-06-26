@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3dde3a5-428d-48d3-9024-c8e48043ee90" name="Default Changelist" comment="Fixed Audio Text Filtering" />
+    <list default="true" id="e3dde3a5-428d-48d3-9024-c8e48043ee90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xmlfilter/FXMLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/translation/FXMLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xmlfilter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/translation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xmlfilter/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/translation/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xmlfilter/utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/translation/utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/translationInterface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/translationInterface.fxml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,45 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/utils.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/translation/utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1159">
-              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+            <state relative-caret-position="524">
+              <caret line="155" column="26" lean-forward="true" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#triggerAlert#0;class#utils#0" />
-                <element signature="docComment;method#HandleExceptions#0;class#utils#0" />
+                <element signature="docComment;method#handleExceptions#0;class#utils#0" />
                 <element signature="docComment;method#loadOpenDialog#0;class#utils#0" />
-                <element signature="docComment;method#writeDataInCsv#0;class#utils#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2266">
-              <caret line="103" selection-start-line="103" selection-end-line="103" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/MainApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/translation/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -67,21 +53,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/translationInterface.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="70" column="105" selection-start-line="70" selection-start-column="105" selection-end-line="70" selection-end-column="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/FXMLController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/translation/FXMLController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+            <state relative-caret-position="391">
+              <caret line="161" column="30" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
+              <folding>
+                <element signature="docComment;method#initialize#0;class#FXMLController#0" />
+                <element signature="method#initialize#0;class#FXMLController#0" />
+                <element signature="method#handleImportSelected#0;class#FXMLController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,11 +115,15 @@
         <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/StringElem.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/DOM.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/FXMLController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/translationInterface.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/StringItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/xmlfilter/FXMLController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/translationtool/utils.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/translation/FXMLController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/translation/utils.java" />
       </list>
     </option>
   </component>
@@ -223,10 +208,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="5752" />
     <option name="y" value="-8" />
-    <option name="width" value="1096" />
-    <option name="height" value="1896" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -266,7 +251,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlfilter" type="462c0819:PsiDirectoryNode" />
+              <item name="translation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XmlFilter" type="b2602c69:ProjectViewProjectNode" />
@@ -293,7 +278,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561538872626" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561556911436" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -321,12 +306,12 @@
   </component>
   <component name="RunManager" selected="Maven.xmlfilter  [exec:java]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.xmlfilter.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.translation.Main" />
       <module name="xmlfilter" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.xmlfilter.*" />
+          <option name="PATTERN" value="org.translation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -337,11 +322,11 @@
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11 (1)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.xmlfilter.MainApp" />
+      <option name="MAIN_CLASS_NAME" value="org.translation.MainApp" />
       <module name="xmlfilter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.xmlfilter.*" />
+          <option name="PATTERN" value="org.translation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -351,6 +336,20 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.translation.utils" />
+      <module name="xmlfilter" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.translation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -475,14 +474,15 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Maven.xmlfilter  [exec:java]" />
       <item itemvalue="Maven.xmlfilter [jar:jar]" />
+      <item itemvalue="Application.utils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.utils" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainApp" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -503,7 +503,7 @@
       <workItem from="1561402010161" duration="2104000" />
       <workItem from="1561412418612" duration="1075000" />
       <workItem from="1561476590517" duration="2688000" />
-      <workItem from="1561537933198" duration="742000" />
+      <workItem from="1561537933198" duration="18296000" />
     </task>
     <task id="LOCAL-00001" summary="Update to JDK 11 /JAVAFX11">
       <created>1548421135114</created>
@@ -596,11 +596,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552301111948</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="first commit">
+      <created>1561538925405</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1561538925406</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14516000" />
+    <option name="totallyTimeSpent" value="32070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -612,9 +619,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="5752" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4982699" visible="true" weight="0.16897655" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4982699" visible="true" weight="0.16897655" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -624,7 +632,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.4767064" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.49945828" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39925718" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -632,7 +640,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32827735" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.34988454" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.6132178" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3298731" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -661,7 +669,8 @@
     <MESSAGE value="added Audio List function" />
     <MESSAGE value="Fixed Error Handling" />
     <MESSAGE value="Fixed Audio Text Filtering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Audio Text Filtering" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -675,28 +684,98 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/DOM.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/StringElem.java" />
     <entry file="jar://C:/Program Files/Java/Openjdk-11.0.2/lib/src.zip!/java.base/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/utils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/translation/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1159">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+        <state relative-caret-position="145">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#triggerAlert#0;class#utils#0" />
-            <element signature="docComment;method#HandleExceptions#0;class#utils#0" />
-            <element signature="docComment;method#loadOpenDialog#0;class#utils#0" />
-            <element signature="docComment;method#writeDataInCsv#0;class#utils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2-win.jar!/javafx/scene/Node.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3801">
+          <caret line="3780" selection-start-line="3780" selection-end-line="3780" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2-win.jar!/javafx/event/Event.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/translationInterface.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="40" column="73" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2-win.jar!/javafx/fxml/FXMLLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-963">
+          <caret line="1307" selection-start-line="1307" selection-end-line="1307" />
+          <folding>
+            <element signature="e#47080#47081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2-win.jar!/com/sun/javafx/event/CompositeEventHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0.jar!/org/apache/poi/xssf/usermodel/XSSFCell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="607" selection-start-line="607" selection-end-line="607" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/StringItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding>
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2266">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="308">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/translation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -707,28 +786,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/MainApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/translation/FXMLController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="391">
+          <caret line="161" column="30" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#initialize#0;class#FXMLController#0" />
+            <element signature="method#initialize#0;class#FXMLController#0" />
+            <element signature="method#handleImportSelected#0;class#FXMLController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/xmlfilter/FXMLController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/translation/utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/translationInterface.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="70" column="105" selection-start-line="70" selection-start-column="105" selection-end-line="70" selection-end-column="105" />
+        <state relative-caret-position="524">
+          <caret line="155" column="26" lean-forward="true" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#triggerAlert#0;class#utils#0" />
+            <element signature="docComment;method#handleExceptions#0;class#utils#0" />
+            <element signature="docComment;method#loadOpenDialog#0;class#utils#0" />
+          </folding>
         </state>
       </provider>
     </entry>
